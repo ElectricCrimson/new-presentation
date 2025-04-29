@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div style="display: flex; align-items: center; gap: 30px; justify-content: center;">
+						<img src="vue-logo.png" alt="logo" style="width: 150px;">
+						<h3>Vue.js</h3>
+					</div>
+				</section>
+				<section>
+					<h4>What is a framework?</h4>
+					<p>A software framework is a structure that we can use to build software. It acts as a foundation so we don't have to deal with creating unnecessary extra logic from scratch. A framework provides a set of tools and elements that help in the speedy development process.</p>
+				</section>
+				<section>
+					<p>Vue.js is a progressive JavaScript framework for building user interfaces. It is ideal for building single-page applications and can also be used to develop components of complex web applications.</p>
+				</section>
+				<section>
+					<h4>Vue is called a progressive framework. This means that it adapts to the needs of the developer.</h4>
+				</section>
+				<section>
+					<p>Vue3 is the latest version, which happens to be way faster and lighter than previous versions. It also comes with improved TypeScript support and many other features like the composition API.</p>
+					<p>Vue also uses an efficient diffing algorithm to improve the performance of web applications. This minimizes DOM updates and thus increases the responsiveness of the application.</p>
+				</section>
+				<section>
+					<section>
+						<h4>Why Vue is popular?</h4>
+					</section>
+					<section>
+						<ul>
+							<li style="color: #fdf6e3;">Lightweight</li>
+							<li style="color: #fdf6e3;">Easy to Learn and Understand</li>
+							<li style="color: #fdf6e3;">Robust Tooling Ecosystem</li>
+							<li style="color: #fdf6e3;">Flexibility</li>
+							<li style="color: #fdf6e3;">Readability</li>
+							<li style="color: #fdf6e3;">Documentation</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Core Features of Vue</h4>
+					</section>
+					<section>
+						<h4>Reactive Data Binding</h4>
+						<p>Vue uses a reactive data model that automatically updates the DOM when the underlying data changes. This two-way data binding simplifies the synchronization between the model and the view.</p>
+					</section>
+					<section>
+						<img src="reactive-data-binding.png" alt="img"/>
+					</section>
+					<section>
+						<h4>Components System</h4>
+						<p>Components are reusable building blocks that structure Vue.js applications into modular, maintainable pieces. Developers use components to simplify complex UIs by dividing them into smaller, manageable elements.</p>
+					</section>
+					<section>
+						<img src="components.png", alt="img">
+					</section>
+					<section>
+						<h4>Directives</h4>
+						<p>The directives are the Vue-specific syntax elements that can be used in component templates.</p>
+						<p>Vue directives are a foundational component in the construction of dynamic and interactive web applications using Vue and are perfect for encapsulating shared functionality that can be used over and over throughout an app.</p>
+					</section>
+					<section>
+						<p>Common directives include:</p>
+						<ul>
+    					<li><span style="color: #fdf6e3; font-weight: 500;">v-if:</span> Conditional rendering</li>
+    					<li><span style="color: #fdf6e3; font-weight: 500;">v-for:</span> Looping through arrays or objects</li>
+    					<li><span style="color: #fdf6e3; font-weight: 500;">v-bind:</span> Dynamically bind attributes or classes</li>
+						</ul>
+					</section>
+					<section>
+						<h4>v-if example</h4>
+						<p>If isVisible is true, the &lt;div&gt; will be rendered. <br>If false, it will be removed from the DOM.</p>
+						<pre>
+							<code>
+								&lt;div v-if=&quot;isVisible&quot;&gt;
+									This content is visible when isVisible is true
+								&lt;/div&gt;
+							</code>
+						</pre>							
+					</section>
+					<section>
+						<h4>v-for example</h4>
+						<p>In this case, v-for iterates through the items array, rendering an &lt;li&gt; for each item. The :key helps Vue efficiently update the DOM when the list changes.</p>
+						<pre>
+							<code>
+								&lt;ul&gt;
+									&lt;li v-for=&quot;item in items&quot; :key=&quot;item.id&quot;&gt;{{ item.name }}&lt;/li&gt;
+								&lt;/ul&gt;
+							</code>
+						</pre>						
+					</section>
+					<section>
+						<h4>v-bind example</h4>
+						<p>This binds the src and alt attributes of the &lt;img&gt; tag to imageUrl and imageAlt properties in your Vue component. Any change in these data properties will automatically update the corresponding HTML attributes.</p>
+						<pre>
+							<code>
+								&lt;img v-bind:src=&quot;imageUrl&quot; v-bind:alt=&quot;imageAlt&quot;&gt;
+							</code>
+						</pre>				
+					</section>
+					<section>
+						<ul>
+							<li style="color: #fdf6e3;">v-text</li>
+							<li style="color: #fdf6e3;">v-html</li>
+							<li style="color: #fdf6e3;">v-show</li>
+							<li style="color: #fdf6e3;">v-else</li>
+							<li style="color: #fdf6e3;">v-if-else</li>
+							<li style="color: #fdf6e3;">v-on</li>
+							<li style="color: #fdf6e3;">v-model</li>
+							<li style="color: #fdf6e3;">v-slot</li>
+							<li style="color: #fdf6e3;">v-pre</li>
+							<li style="color: #fdf6e3;">v-once</li>
+							<li style="color: #fdf6e3;">v-memo</li>
+							<li style="color: #fdf6e3;">v-clock</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Computed Properties and Watchers</h4>
+						<p>Computed properties and watchers are two of the most fundamental concepts in Vue.</p>
+						<p>They have a lot of similarities, so it can be hard knowing which one is best for what you're trying to accomplish.</p>
+					</section>
+					<section>
+						<h4>Watchers</h4>
+						<p>A watcher (or watched prop) let's us track a property on our component and run a function whenever it changes.</p>
+						<p>Common examples are:</p>
+						<ul>
+							<li>Fetching data</li>
+							<li>Manipulating the DOM</li>
+							<li>Using a browser API, such as <br>local storage or audio playback</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Computed Properties</h4>
+						<p>These are properties that depend on other data properties. They are cached based on their dependencies, improving performance.</p>
+						<p>Computed properties can be used for everything from transforming data, to conditional rendering, and even optimizing performance by caching expensive calculations.</p>
+					</section>
+				</section>
+				<section>
+					<div style="display: flex; align-items: center; gap: 30px; justify-content: center;">
+						<img src="vue-logo.png" alt="logo" style="width: 150px;">
+						<h3>Vue.js</h3>
+					</div>
+				</section>
+				<section><h4>Thank you!</h4></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
